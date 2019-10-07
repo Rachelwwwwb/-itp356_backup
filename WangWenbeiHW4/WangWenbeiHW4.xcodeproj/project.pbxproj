@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CCBC28892349469400C9E930 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBC28882349469400C9E930 /* AppDelegate.swift */; };
+		CCBC288B2349469400C9E930 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBC288A2349469400C9E930 /* ViewController.swift */; };
+		CCBC288E2349469400C9E930 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCBC288C2349469400C9E930 /* Main.storyboard */; };
+		CCBC28902349469500C9E930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCBC288F2349469500C9E930 /* Assets.xcassets */; };
+		CCBC28932349469500C9E930 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCBC28912349469500C9E930 /* LaunchScreen.storyboard */; };
+		CCBC289E2349469500C9E930 /* WangWenbeiHW4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBC289D2349469500C9E930 /* WangWenbeiHW4Tests.swift */; };
+		CCBC28A92349469500C9E930 /* WangWenbeiHW4UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBC28A82349469500C9E930 /* WangWenbeiHW4UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CCBC289A2349469500C9E930 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCBC287D2349469400C9E930 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCBC28842349469400C9E930;
+			remoteInfo = WangWenbeiHW4;
+		};
+		CCBC28A52349469500C9E930 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCBC287D2349469400C9E930 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCBC28842349469400C9E930;
+			remoteInfo = WangWenbeiHW4;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CCBC28852349469400C9E930 /* WangWenbeiHW4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WangWenbeiHW4.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCBC28882349469400C9E930 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CCBC288A2349469400C9E930 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CCBC288D2349469400C9E930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CCBC288F2349469500C9E930 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCBC28922349469500C9E930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CCBC28942349469500C9E930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCBC28992349469500C9E930 /* WangWenbeiHW4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WangWenbeiHW4Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCBC289D2349469500C9E930 /* WangWenbeiHW4Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WangWenbeiHW4Tests.swift; sourceTree = "<group>"; };
+		CCBC289F2349469500C9E930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCBC28A42349469500C9E930 /* WangWenbeiHW4UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WangWenbeiHW4UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCBC28A82349469500C9E930 /* WangWenbeiHW4UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WangWenbeiHW4UITests.swift; sourceTree = "<group>"; };
+		CCBC28AA2349469500C9E930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCBC28822349469400C9E930 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCBC28962349469500C9E930 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCBC28A12349469500C9E930 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CCBC287C2349469400C9E930 = {
+			isa = PBXGroup;
+			children = (
+				CCBC28872349469400C9E930 /* WangWenbeiHW4 */,
+				CCBC289C2349469500C9E930 /* WangWenbeiHW4Tests */,
+				CCBC28A72349469500C9E930 /* WangWenbeiHW4UITests */,
+				CCBC28862349469400C9E930 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CCBC28862349469400C9E930 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCBC28852349469400C9E930 /* WangWenbeiHW4.app */,
+				CCBC28992349469500C9E930 /* WangWenbeiHW4Tests.xctest */,
+				CCBC28A42349469500C9E930 /* WangWenbeiHW4UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCBC28872349469400C9E930 /* WangWenbeiHW4 */ = {
+			isa = PBXGroup;
+			children = (
+				CCBC28882349469400C9E930 /* AppDelegate.swift */,
+				CCBC288A2349469400C9E930 /* ViewController.swift */,
+				CCBC288C2349469400C9E930 /* Main.storyboard */,
+				CCBC288F2349469500C9E930 /* Assets.xcassets */,
+				CCBC28912349469500C9E930 /* LaunchScreen.storyboard */,
+				CCBC28942349469500C9E930 /* Info.plist */,
+			);
+			path = WangWenbeiHW4;
+			sourceTree = "<group>";
+		};
+		CCBC289C2349469500C9E930 /* WangWenbeiHW4Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CCBC289D2349469500C9E930 /* WangWenbeiHW4Tests.swift */,
+				CCBC289F2349469500C9E930 /* Info.plist */,
+			);
+			path = WangWenbeiHW4Tests;
+			sourceTree = "<group>";
+		};
+		CCBC28A72349469500C9E930 /* WangWenbeiHW4UITests */ = {
+			isa = PBXGroup;
+			children = (
+				CCBC28A82349469500C9E930 /* WangWenbeiHW4UITests.swift */,
+				CCBC28AA2349469500C9E930 /* Info.plist */,
+			);
+			path = WangWenbeiHW4UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCBC28842349469400C9E930 /* WangWenbeiHW4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCBC28AD2349469500C9E930 /* Build configuration list for PBXNativeTarget "WangWenbeiHW4" */;
+			buildPhases = (
+				CCBC28812349469400C9E930 /* Sources */,
+				CCBC28822349469400C9E930 /* Frameworks */,
+				CCBC28832349469400C9E930 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WangWenbeiHW4;
+			productName = WangWenbeiHW4;
+			productReference = CCBC28852349469400C9E930 /* WangWenbeiHW4.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CCBC28982349469500C9E930 /* WangWenbeiHW4Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCBC28B02349469500C9E930 /* Build configuration list for PBXNativeTarget "WangWenbeiHW4Tests" */;
+			buildPhases = (
+				CCBC28952349469500C9E930 /* Sources */,
+				CCBC28962349469500C9E930 /* Frameworks */,
+				CCBC28972349469500C9E930 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCBC289B2349469500C9E930 /* PBXTargetDependency */,
+			);
+			name = WangWenbeiHW4Tests;
+			productName = WangWenbeiHW4Tests;
+			productReference = CCBC28992349469500C9E930 /* WangWenbeiHW4Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CCBC28A32349469500C9E930 /* WangWenbeiHW4UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCBC28B32349469500C9E930 /* Build configuration list for PBXNativeTarget "WangWenbeiHW4UITests" */;
+			buildPhases = (
+				CCBC28A02349469500C9E930 /* Sources */,
+				CCBC28A12349469500C9E930 /* Frameworks */,
+				CCBC28A22349469500C9E930 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCBC28A62349469500C9E930 /* PBXTargetDependency */,
+			);
+			name = WangWenbeiHW4UITests;
+			productName = WangWenbeiHW4UITests;
+			productReference = CCBC28A42349469500C9E930 /* WangWenbeiHW4UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCBC287D2349469400C9E930 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Wenbei Wang";
+				TargetAttributes = {
+					CCBC28842349469400C9E930 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					CCBC28982349469500C9E930 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = CCBC28842349469400C9E930;
+					};
+					CCBC28A32349469500C9E930 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = CCBC28842349469400C9E930;
+					};
+				};
+			};
+			buildConfigurationList = CCBC28802349469400C9E930 /* Build configuration list for PBXProject "WangWenbeiHW4" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CCBC287C2349469400C9E930;
+			productRefGroup = CCBC28862349469400C9E930 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCBC28842349469400C9E930 /* WangWenbeiHW4 */,
+				CCBC28982349469500C9E930 /* WangWenbeiHW4Tests */,
+				CCBC28A32349469500C9E930 /* WangWenbeiHW4UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCBC28832349469400C9E930 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCBC28932349469500C9E930 /* LaunchScreen.storyboard in Resources */,
+				CCBC28902349469500C9E930 /* Assets.xcassets in Resources */,
+				CCBC288E2349469400C9E930 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCBC28972349469500C9E930 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCBC28A22349469500C9E930 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCBC28812349469400C9E930 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCBC288B2349469400C9E930 /* ViewController.swift in Sources */,
+				CCBC28892349469400C9E930 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCBC28952349469500C9E930 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCBC289E2349469500C9E930 /* WangWenbeiHW4Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCBC28A02349469500C9E930 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCBC28A92349469500C9E930 /* WangWenbeiHW4UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CCBC289B2349469500C9E930 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCBC28842349469400C9E930 /* WangWenbeiHW4 */;
+			targetProxy = CCBC289A2349469500C9E930 /* PBXContainerItemProxy */;
+		};
+		CCBC28A62349469500C9E930 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCBC28842349469400C9E930 /* WangWenbeiHW4 */;
+			targetProxy = CCBC28A52349469500C9E930 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CCBC288C2349469400C9E930 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCBC288D2349469400C9E930 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CCBC28912349469500C9E930 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCBC28922349469500C9E930 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CCBC28AB2349469500C9E930 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CCBC28AC2349469500C9E930 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCBC28AE2349469500C9E930 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WangWenbeiHW4/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.wenbeiwa.WangWenbeiHW4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CCBC28AF2349469500C9E930 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WangWenbeiHW4/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.wenbeiwa.WangWenbeiHW4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CCBC28B12349469500C9E930 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WangWenbeiHW4Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.wenbeiwa.WangWenbeiHW4Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WangWenbeiHW4.app/WangWenbeiHW4";
+			};
+			name = Debug;
+		};
+		CCBC28B22349469500C9E930 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WangWenbeiHW4Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.wenbeiwa.WangWenbeiHW4Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WangWenbeiHW4.app/WangWenbeiHW4";
+			};
+			name = Release;
+		};
+		CCBC28B42349469500C9E930 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WangWenbeiHW4UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.wenbeiwa.WangWenbeiHW4UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WangWenbeiHW4;
+			};
+			name = Debug;
+		};
+		CCBC28B52349469500C9E930 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WangWenbeiHW4UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.wenbeiwa.WangWenbeiHW4UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WangWenbeiHW4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCBC28802349469400C9E930 /* Build configuration list for PBXProject "WangWenbeiHW4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCBC28AB2349469500C9E930 /* Debug */,
+				CCBC28AC2349469500C9E930 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCBC28AD2349469500C9E930 /* Build configuration list for PBXNativeTarget "WangWenbeiHW4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCBC28AE2349469500C9E930 /* Debug */,
+				CCBC28AF2349469500C9E930 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCBC28B02349469500C9E930 /* Build configuration list for PBXNativeTarget "WangWenbeiHW4Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCBC28B12349469500C9E930 /* Debug */,
+				CCBC28B22349469500C9E930 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCBC28B32349469500C9E930 /* Build configuration list for PBXNativeTarget "WangWenbeiHW4UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCBC28B42349469500C9E930 /* Debug */,
+				CCBC28B52349469500C9E930 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CCBC287D2349469400C9E930 /* Project object */;
+}
