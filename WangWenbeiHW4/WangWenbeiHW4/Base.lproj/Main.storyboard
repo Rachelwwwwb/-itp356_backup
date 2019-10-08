@@ -31,9 +31,9 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Amount" textAlignment="natural" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="52c-PC-zGO" userLabel="Bill text">
                                         <rect key="frame" x="71" y="5" width="297" height="58"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                         <connections>
-                                            <action selector="billAmountEntered:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="wU1-B0-B3u"/>
+                                            <action selector="billEntered:" destination="BYZ-38-t0r" eventType="valueChanged" id="QfT-ib-P5R"/>
                                             <action selector="dismissKeyBoard:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="sVq-mJ-7va"/>
                                         </connections>
                                     </textField>
@@ -52,6 +52,9 @@
                                             <segment title="9"/>
                                             <segment title="9.5"/>
                                         </segments>
+                                        <connections>
+                                            <action selector="taxChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="E90-Zf-0Ou"/>
+                                        </connections>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tax %" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="FZa-aT-spf" userLabel="Tax label">
                                         <rect key="frame" x="10" y="77" width="45" height="57.666666666666657"/>
@@ -91,8 +94,11 @@
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k4W-7q-dDi" userLabel="Tip switch">
                                         <rect key="frame" x="306.66666666666669" y="150.66666666666666" width="51" height="58"/>
+                                        <connections>
+                                            <action selector="taxSwitched:" destination="BYZ-38-t0r" eventType="valueChanged" id="vrb-lP-Z6E"/>
+                                        </connections>
                                     </switch>
-                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ldE-hJ-gIR">
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ldE-hJ-gIR">
                                         <rect key="frame" x="274" y="248.66666666666669" width="94" height="32"/>
                                         <connections>
                                             <action selector="changeSplitNum:" destination="BYZ-38-t0r" eventType="valueChanged" id="zwj-5x-uQo"/>
