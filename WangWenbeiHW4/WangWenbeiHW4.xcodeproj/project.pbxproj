@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC5B3F4D234EE13800661FC6 /* HW4AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B3F4C234EE13800661FC6 /* HW4AccessibilityIdentifiers.swift */; };
+		CC5B3F4E234EE13800661FC6 /* HW4AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B3F4C234EE13800661FC6 /* HW4AccessibilityIdentifiers.swift */; };
+		CC5B3F50234EE14300661FC6 /* HW4SanityTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B3F4F234EE14300661FC6 /* HW4SanityTest.swift */; };
 		CCBC28892349469400C9E930 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBC28882349469400C9E930 /* AppDelegate.swift */; };
 		CCBC288B2349469400C9E930 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBC288A2349469400C9E930 /* ViewController.swift */; };
 		CCBC288E2349469400C9E930 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCBC288C2349469400C9E930 /* Main.storyboard */; };
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC5B3F4C234EE13800661FC6 /* HW4AccessibilityIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HW4AccessibilityIdentifiers.swift; sourceTree = "<group>"; };
+		CC5B3F4F234EE14300661FC6 /* HW4SanityTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HW4SanityTest.swift; sourceTree = "<group>"; };
 		CCBC28852349469400C9E930 /* WangWenbeiHW4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WangWenbeiHW4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCBC28882349469400C9E930 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCBC288A2349469400C9E930 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,7 +115,9 @@
 		CCBC289C2349469500C9E930 /* WangWenbeiHW4Tests */ = {
 			isa = PBXGroup;
 			children = (
+				CC5B3F4F234EE14300661FC6 /* HW4SanityTest.swift */,
 				CCBC289D2349469500C9E930 /* WangWenbeiHW4Tests.swift */,
+				CC5B3F4C234EE13800661FC6 /* HW4AccessibilityIdentifiers.swift */,
 				CCBC289F2349469500C9E930 /* Info.plist */,
 			);
 			path = WangWenbeiHW4Tests;
@@ -257,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCBC288B2349469400C9E930 /* ViewController.swift in Sources */,
+				CC5B3F4D234EE13800661FC6 /* HW4AccessibilityIdentifiers.swift in Sources */,
 				CCBC28892349469400C9E930 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,7 +281,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC5B3F50234EE14300661FC6 /* HW4SanityTest.swift in Sources */,
 				CCBC28A92349469500C9E930 /* WangWenbeiHW4UITests.swift in Sources */,
+				CC5B3F4E234EE13800661FC6 /* HW4AccessibilityIdentifiers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

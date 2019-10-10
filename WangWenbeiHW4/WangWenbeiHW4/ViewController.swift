@@ -29,24 +29,46 @@ class ViewController: UIViewController {
     @IBOutlet weak var taxSlider: UISlider!
     @IBOutlet weak var spiltStepper: UIStepper!
     @IBOutlet weak var taxSwitch: UISwitch!
+    @IBOutlet weak var resetButton: UIButton!
     
+    //first view
+    //dynamic label
+    @IBOutlet weak var sliderLabel: UILabel!
+    @IBOutlet weak var splitLabel: UILabel!
+    
+    //static label
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var billStaticLabel: UILabel!
+    @IBOutlet weak var taxStaticLabel: UILabel!
+    @IBOutlet weak var includeTaxLabel: UILabel!
+    @IBOutlet weak var spiltStaticLabel: UILabel!
     
     //second view
-    
     @IBOutlet weak var taxLabel: UILabel!
     @IBOutlet weak var subtotalLabel: UILabel!
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var totalWithTipLabel: UILabel!
     @IBOutlet weak var totalPPLabel: UILabel!
     
+    //static label
+
+    @IBOutlet weak var taxSecondLabel: UILabel!
+    @IBOutlet weak var subtotalStaticLabel: UILabel!
+    @IBOutlet weak var tipStaticLabel: UILabel!
+    @IBOutlet weak var totalWithTipStaticLabel: UILabel!
+    @IBOutlet weak var totalPPStaticLabel: UILabel!
+    
+    @IBOutlet var oneView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setAccessibilityIdentifiers()
         // Do any additional setup after loading the view.
         setDefaultValues()
     }
 
-    func setDefaultValues(){
+    private func setDefaultValues(){
         billAmountLabel.text = ""
         taxSegmented.selectedSegmentIndex = 0
         taxSlider.value = 0
@@ -64,22 +86,41 @@ class ViewController: UIViewController {
         billAmount = 0.0
         taxValue = 0.0
         subtotal = 0.0
+        taxPercentage = 0.0
+        tipAmount = 0.0
+        tipPercentage = 0.0
+        tWithTip = 0.0
+        splitNum = 1;
+        tPP = 0.0
     }
     
     
     @IBAction func billEntered(_ sender: UITextField) {
-        print ("hi")
-        let amount = billAmountLabel.text ?? ""
-        if amount.count > 0{
-            billAmount = Double(amount)!
+        guard let value = billAmountLabel.text else {
+            return
         }
-        if tipPercentage != 0 {
-            
-            tipAmount = billAmount * (1 + tipPercentage)
+        if value.count > 0{
+            billAmount = Double(value)!
+        
+                
+            tipAmount = billAmount * tipPercentage
             tipLabel.text = "$" + String (format: "%.2f", tipAmount)
+            taxValue = billAmount * tipPercentage
+            taxLabel.text = "$" + String (format: "%.2f", taxValue)
+            
+            subtotal = taxValue
+            tWithTip = billAmount + tipAmount
+            
+            if includeTax {
+                subtotal += taxValue
+                tWithTip += taxValue
+            }
+
+            tPP = billAmount/Double(splitNum)
+            subtotalLabel.text = "$" + String (format: "%.2f", subtotal)
+            totalWithTipLabel.text = "$" + String (format: "%.2f", tWithTip)
+            totalPPLabel.text = "$" + String (format: "%.2f", tPP)
         }
-        tPP = billAmount/Double(splitNum)
-        totalPPLabel.text = "$" + String (format: "%.2f", tPP)
     }
         
     @IBAction func sliderChanged(_ sender: UISlider) {
@@ -92,13 +133,16 @@ class ViewController: UIViewController {
             if amount.count > 0{
                 billAmount = Double(amount)!
             }
-            tipAmount = billAmount * (1 + tipPercentage)
+            tipAmount = billAmount * tipPercentage
             tWithTip = billAmount + tipAmount
             tipLabel.text = "$" + String (format: "%.2f", tipAmount)
             if includeTax{
                 tWithTip += taxValue
             }
+            tPP = tWithTip / Double(splitNum)
             totalWithTipLabel.text = "$" + String (format: "%.2f", tWithTip)
+            totalPPLabel.text = "$" + String (format: "%.2f", tPP)
+
         }
     }
     
@@ -163,8 +207,10 @@ class ViewController: UIViewController {
                 subtotal = billAmount
                 tWithTip = billAmount + tipAmount
             }
+            tPP = tWithTip/Double(splitNum)
             subtotalLabel.text = "$" + String (format: "%.2f", subtotal)
             totalWithTipLabel.text = "$" + String (format: "%.2f", tWithTip)
+            totalPPLabel.text = "$" + String (format: "%.2f", tPP)
 
         }
     }
@@ -192,6 +238,18 @@ class ViewController: UIViewController {
     
     
     @IBAction func clearAll(_ sender: UIButton) {
+        let alert = UIAlertController(title: "Clear All Values", message: "Are you sure you want to clear all values?", preferredStyle: .actionSheet)
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        let okAction = UIAlertAction(title: "Clear All", style: .default, handler:clear)
+        
+        alert.addAction(cancelAction)
+        alert.addAction(okAction)
+        present(alert,animated: true)
+    }
+    
+    private func clear(action:UIAlertAction) {
         setDefaultValues()
     }
     
@@ -206,6 +264,77 @@ class ViewController: UIViewController {
             billAmountLabel.resignFirstResponder()
         }
         super.touchesBegan(touches, with: event)
+    }
+    
+    func setAccessibilityIdentifiers() {
+        //set up all the identfiers
+
+        //ui components you can interact with
+
+        billAmountLabel.accessibilityIdentifier = HW4AccessibilityIdentifiers.billTextField
+
+        taxSegmented.accessibilityIdentifier = HW4AccessibilityIdentifiers.segmentedTax
+
+        taxSwitch.accessibilityIdentifier = HW4AccessibilityIdentifiers.includeTaxSwitch
+
+        taxSlider.accessibilityIdentifier = HW4AccessibilityIdentifiers.tipSlider
+
+        spiltStepper.accessibilityIdentifier = HW4AccessibilityIdentifiers.splitStepper
+
+        resetButton.accessibilityIdentifier = HW4AccessibilityIdentifiers.resetButton
+
+        
+
+        
+
+        //dyanmic labels that will change based on userinput
+
+        taxLabel.accessibilityIdentifier = HW4AccessibilityIdentifiers.taxAmountLabel
+
+        subtotalLabel.accessibilityIdentifier = HW4AccessibilityIdentifiers.subtotalAmountLabel
+
+        tipLabel.accessibilityIdentifier = HW4AccessibilityIdentifiers.tipAmountLabel
+
+        totalWithTipLabel.accessibilityIdentifier = HW4AccessibilityIdentifiers.totalWithTipAmountLabel
+
+        totalPPLabel.accessibilityIdentifier = HW4AccessibilityIdentifiers.totalPerPersonAmountLabel
+
+        sliderLabel.accessibilityIdentifier = HW4AccessibilityIdentifiers.sliderLabel
+
+        splitLabel.accessibilityIdentifier = HW4AccessibilityIdentifiers.splitLabel
+
+        
+
+        //static labels that dont change - title labels
+
+        titleLabel.accessibilityIdentifier = HW4AccessibilityIdentifiers.tipCalculaterLabel
+
+        billStaticLabel.accessibilityIdentifier = HW4AccessibilityIdentifiers.billLabel
+
+        taxStaticLabel.accessibilityIdentifier = HW4AccessibilityIdentifiers.segmentedLabel
+
+        includeTaxLabel.accessibilityIdentifier = HW4AccessibilityIdentifiers.includeTaxLabel
+
+        spiltStaticLabel.accessibilityIdentifier = HW4AccessibilityIdentifiers.evenSplitLabel
+
+        taxSecondLabel.accessibilityIdentifier = HW4AccessibilityIdentifiers.taxLabel
+
+        subtotalStaticLabel.accessibilityIdentifier = HW4AccessibilityIdentifiers.subtotalLabel
+
+        tipStaticLabel.accessibilityIdentifier = HW4AccessibilityIdentifiers.tipLabel
+
+        totalWithTipStaticLabel.accessibilityIdentifier = HW4AccessibilityIdentifiers.totalWithTipLabel
+
+        totalPPStaticLabel.accessibilityIdentifier = HW4AccessibilityIdentifiers.totalPerPersonLabel
+
+        
+
+        //user view; only need to connect one
+
+        oneView.accessibilityIdentifier = HW4AccessibilityIdentifiers.view
+
+        
+
     }
 
     
