@@ -13,6 +13,18 @@ class ViewController: UIViewController {
     
     //IBOutlets
     @IBOutlet weak var questionLabel: UILabel!
+    @IBAction func handleSwipe(_ sender: UISwipeGestureRecognizer) {
+        if sender.direction == .right {
+            let swipeRight = UIViewPropertyAnimator(duration: 1, curve: .linear, animations: rightAway)
+            swipeRight.addCompletion(rightBack)
+            swipeRight.startAnimation()
+        }
+        else {
+            let swipeLeft = UIViewPropertyAnimator(duration: 1, curve: .linear, animations: leftAway)
+            swipeLeft.addCompletion(leftBack)
+            swipeLeft.startAnimation()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +59,22 @@ class ViewController: UIViewController {
     func rightAway() {
         questionLabel.transform = CGAffineTransform(translationX: view.frame.size.width, y: 0)
     }
+    func leftAway() {
+        questionLabel.transform = CGAffineTransform(translationX: -view.frame.size.width, y: 0)
+    }
+    func leftBack (position: UIViewAnimatingPosition){
+        if let nextQuestion = model.nextFlashcard() {
+            questionLabel.text = nextQuestion.getQuestion()
+        }
+        else {
+            questionLabel.text = "No next card"
+        }
+        questionLabel.transform = CGAffineTransform(translationX: view.frame.size.width, y: 0)
+        let leftBackAnimation = UIViewPropertyAnimator(duration: 1, curve: .linear, animations: {() in
+        self.questionLabel.transform = CGAffineTransform(translationX: 0, y: 0) })
+        leftBackAnimation.startAnimation()
+    }
+    
     func rightBack (position: UIViewAnimatingPosition){
         if let prevQuestion = model.previousFlashcard() {
             questionLabel.text = prevQuestion.getQuestion()
@@ -65,15 +93,7 @@ class ViewController: UIViewController {
         firstAnimator.startAnimation()
     }
     
-    @IBAction func rightSwipe(_ sender: UISwipeGestureRecognizer) {
-        if sender.direction == .right {
-            let swipeRight = UIViewPropertyAnimator(duration: 1, curve: .linear, animations: rightAway)
-            swipeRight.addCompletion(rightBack)
-            swipeRight.startAnimation()
-        }
-    }
-    
-    
+
 
 }
 
