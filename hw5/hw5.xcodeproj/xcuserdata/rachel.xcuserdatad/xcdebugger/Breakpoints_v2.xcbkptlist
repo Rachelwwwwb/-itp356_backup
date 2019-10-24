@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "B5100055-9316-4342-9482-FB9611B96A76"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "63946358-AC97-430B-A869-58DBB95D5D35"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "hw5/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "AppDelegate"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "63946358-AC97-430B-A869-58DBB95D5D35 - 47075c7cacc46e71"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "hw5.AppDelegate.__allocating_init() -&gt; hw5.AppDelegate"
+                  moduleName = "hw5"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rachel/Desktop/Fall%202019/ITP%20342/hw5/hw5/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "63946358-AC97-430B-A869-58DBB95D5D35 - 5d838735d77e8c39"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "hw5.AppDelegate.init() -&gt; hw5.AppDelegate"
+                  moduleName = "hw5"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rachel/Desktop/Fall%202019/ITP%20342/hw5/hw5/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "69">
+               </Location>
+               <Location
+                  uuid = "63946358-AC97-430B-A869-58DBB95D5D35 - b3343e2f49bb8ca8"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "hw5.AppDelegate.__deallocating_deinit"
+                  moduleName = "hw5"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rachel/Desktop/Fall%202019/ITP%20342/hw5/hw5/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "63946358-AC97-430B-A869-58DBB95D5D35 - 6c686fe0e25a6903"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "hw5"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rachel/Desktop/Fall%202019/ITP%20342/hw5/hw5/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "15">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

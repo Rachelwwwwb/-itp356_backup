@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC7C44D1235FC5B6005897D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C44D0235FC5B6005897D2 /* AppDelegate.swift */; };
+		CC7C44D3235FC5B6005897D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C44D2235FC5B6005897D2 /* SceneDelegate.swift */; };
+		CC7C44D5235FC5B6005897D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C44D4235FC5B6005897D2 /* ContentView.swift */; };
+		CC7C44D7235FC5B8005897D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC7C44D6235FC5B8005897D2 /* Assets.xcassets */; };
+		CC7C44DD235FC5B8005897D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC7C44DB235FC5B8005897D2 /* LaunchScreen.storyboard */; };
+		CC7C44E8235FC5B9005897D2 /* WangWenbeiHW5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C44E7235FC5B9005897D2 /* WangWenbeiHW5Tests.swift */; };
+		CC7C44F3235FC5B9005897D2 /* WangWenbeiHW5UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C44F2235FC5B9005897D2 /* WangWenbeiHW5UITests.swift */; };
+		CC7C4501235FCE82005897D2 /* Flashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C4500235FCE82005897D2 /* Flashcard.swift */; };
+		CC7C4502235FCE89005897D2 /* Flashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C4500235FCE82005897D2 /* Flashcard.swift */; };
+		CC7C4503235FCE89005897D2 /* Flashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C4500235FCE82005897D2 /* Flashcard.swift */; };
+		CC7C4505235FD488005897D2 /* HW5FlashcardsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C4504235FD488005897D2 /* HW5FlashcardsDataModel.swift */; };
+		CC7C4506235FD488005897D2 /* HW5FlashcardsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C4504235FD488005897D2 /* HW5FlashcardsDataModel.swift */; };
+		CC7C4507235FD488005897D2 /* HW5FlashcardsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C4504235FD488005897D2 /* HW5FlashcardsDataModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC7C44E4235FC5B9005897D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC7C44C5235FC5B6005897D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC7C44CC235FC5B6005897D2;
+			remoteInfo = WangWenbeiHW5;
+		};
+		CC7C44EF235FC5B9005897D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC7C44C5235FC5B6005897D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC7C44CC235FC5B6005897D2;
+			remoteInfo = WangWenbeiHW5;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CC7C44CD235FC5B6005897D2 /* Flashcards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flashcards.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC7C44D0235FC5B6005897D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = View/AppDelegate.swift; sourceTree = "<group>"; };
+		CC7C44D2235FC5B6005897D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CC7C44D4235FC5B6005897D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CC7C44D6235FC5B8005897D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC7C44DC235FC5B8005897D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CC7C44DE235FC5B8005897D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC7C44E3235FC5B9005897D2 /* WangWenbeiHW5Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WangWenbeiHW5Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC7C44E7235FC5B9005897D2 /* WangWenbeiHW5Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WangWenbeiHW5Tests.swift; sourceTree = "<group>"; };
+		CC7C44E9235FC5B9005897D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC7C44EE235FC5B9005897D2 /* WangWenbeiHW5UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WangWenbeiHW5UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC7C44F2235FC5B9005897D2 /* WangWenbeiHW5UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WangWenbeiHW5UITests.swift; sourceTree = "<group>"; };
+		CC7C44F4235FC5B9005897D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC7C4500235FCE82005897D2 /* Flashcard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flashcard.swift; sourceTree = "<group>"; };
+		CC7C4504235FD488005897D2 /* HW5FlashcardsDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HW5FlashcardsDataModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC7C44CA235FC5B6005897D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7C44E0235FC5B9005897D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7C44EB235FC5B9005897D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC51D3AD2360E9590096DA4E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CC7C4500235FCE82005897D2 /* Flashcard.swift */,
+				CC7C4504235FD488005897D2 /* HW5FlashcardsDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CC51D3AE2360E9760096DA4E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CC51D3AF2360E98B0096DA4E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CC7C44D6235FC5B8005897D2 /* Assets.xcassets */,
+				CC7C44DB235FC5B8005897D2 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CC7C44C4235FC5B6005897D2 = {
+			isa = PBXGroup;
+			children = (
+				CC7C44CF235FC5B6005897D2 /* WangWenbeiHW5 */,
+				CC7C44E6235FC5B9005897D2 /* WangWenbeiHW5Tests */,
+				CC7C44F1235FC5B9005897D2 /* WangWenbeiHW5UITests */,
+				CC7C44CE235FC5B6005897D2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC7C44CE235FC5B6005897D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC7C44CD235FC5B6005897D2 /* Flashcards.app */,
+				CC7C44E3235FC5B9005897D2 /* WangWenbeiHW5Tests.xctest */,
+				CC7C44EE235FC5B9005897D2 /* WangWenbeiHW5UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC7C44CF235FC5B6005897D2 /* WangWenbeiHW5 */ = {
+			isa = PBXGroup;
+			children = (
+				CC51D3AD2360E9590096DA4E /* Model */,
+				CC51D3AE2360E9760096DA4E /* Controller */,
+				CC51D3AF2360E98B0096DA4E /* View */,
+				CC7C44D2235FC5B6005897D2 /* SceneDelegate.swift */,
+				CC7C44D0235FC5B6005897D2 /* AppDelegate.swift */,
+				CC7C44D4235FC5B6005897D2 /* ContentView.swift */,
+				CC7C44DE235FC5B8005897D2 /* Info.plist */,
+			);
+			path = WangWenbeiHW5;
+			sourceTree = "<group>";
+		};
+		CC7C44E6235FC5B9005897D2 /* WangWenbeiHW5Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CC7C44E7235FC5B9005897D2 /* WangWenbeiHW5Tests.swift */,
+				CC7C44E9235FC5B9005897D2 /* Info.plist */,
+			);
+			path = WangWenbeiHW5Tests;
+			sourceTree = "<group>";
+		};
+		CC7C44F1235FC5B9005897D2 /* WangWenbeiHW5UITests */ = {
+			isa = PBXGroup;
+			children = (
+				CC7C44F2235FC5B9005897D2 /* WangWenbeiHW5UITests.swift */,
+				CC7C44F4235FC5B9005897D2 /* Info.plist */,
+			);
+			path = WangWenbeiHW5UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC7C44CC235FC5B6005897D2 /* WangWenbeiHW5 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC7C44F7235FC5B9005897D2 /* Build configuration list for PBXNativeTarget "WangWenbeiHW5" */;
+			buildPhases = (
+				CC7C44C9235FC5B6005897D2 /* Sources */,
+				CC7C44CA235FC5B6005897D2 /* Frameworks */,
+				CC7C44CB235FC5B6005897D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WangWenbeiHW5;
+			productName = WangWenbeiHW5;
+			productReference = CC7C44CD235FC5B6005897D2 /* Flashcards.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CC7C44E2235FC5B9005897D2 /* WangWenbeiHW5Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC7C44FA235FC5B9005897D2 /* Build configuration list for PBXNativeTarget "WangWenbeiHW5Tests" */;
+			buildPhases = (
+				CC7C44DF235FC5B9005897D2 /* Sources */,
+				CC7C44E0235FC5B9005897D2 /* Frameworks */,
+				CC7C44E1235FC5B9005897D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC7C44E5235FC5B9005897D2 /* PBXTargetDependency */,
+			);
+			name = WangWenbeiHW5Tests;
+			productName = WangWenbeiHW5Tests;
+			productReference = CC7C44E3235FC5B9005897D2 /* WangWenbeiHW5Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CC7C44ED235FC5B9005897D2 /* WangWenbeiHW5UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC7C44FD235FC5B9005897D2 /* Build configuration list for PBXNativeTarget "WangWenbeiHW5UITests" */;
+			buildPhases = (
+				CC7C44EA235FC5B9005897D2 /* Sources */,
+				CC7C44EB235FC5B9005897D2 /* Frameworks */,
+				CC7C44EC235FC5B9005897D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC7C44F0235FC5B9005897D2 /* PBXTargetDependency */,
+			);
+			name = WangWenbeiHW5UITests;
+			productName = WangWenbeiHW5UITests;
+			productReference = CC7C44EE235FC5B9005897D2 /* WangWenbeiHW5UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC7C44C5235FC5B6005897D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Wenbei Wang";
+				TargetAttributes = {
+					CC7C44CC235FC5B6005897D2 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					CC7C44E2235FC5B9005897D2 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = CC7C44CC235FC5B6005897D2;
+					};
+					CC7C44ED235FC5B9005897D2 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = CC7C44CC235FC5B6005897D2;
+					};
+				};
+			};
+			buildConfigurationList = CC7C44C8235FC5B6005897D2 /* Build configuration list for PBXProject "WangWenbeiHW5" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC7C44C4235FC5B6005897D2;
+			productRefGroup = CC7C44CE235FC5B6005897D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC7C44CC235FC5B6005897D2 /* WangWenbeiHW5 */,
+				CC7C44E2235FC5B9005897D2 /* WangWenbeiHW5Tests */,
+				CC7C44ED235FC5B9005897D2 /* WangWenbeiHW5UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC7C44CB235FC5B6005897D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC7C44DD235FC5B8005897D2 /* LaunchScreen.storyboard in Resources */,
+				CC7C44D7235FC5B8005897D2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7C44E1235FC5B9005897D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7C44EC235FC5B9005897D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC7C44C9235FC5B6005897D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC7C44D1235FC5B6005897D2 /* AppDelegate.swift in Sources */,
+				CC7C44D3235FC5B6005897D2 /* SceneDelegate.swift in Sources */,
+				CC7C4505235FD488005897D2 /* HW5FlashcardsDataModel.swift in Sources */,
+				CC7C4501235FCE82005897D2 /* Flashcard.swift in Sources */,
+				CC7C44D5235FC5B6005897D2 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7C44DF235FC5B9005897D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC7C4502235FCE89005897D2 /* Flashcard.swift in Sources */,
+				CC7C4506235FD488005897D2 /* HW5FlashcardsDataModel.swift in Sources */,
+				CC7C44E8235FC5B9005897D2 /* WangWenbeiHW5Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7C44EA235FC5B9005897D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC7C4503235FCE89005897D2 /* Flashcard.swift in Sources */,
+				CC7C4507235FD488005897D2 /* HW5FlashcardsDataModel.swift in Sources */,
+				CC7C44F3235FC5B9005897D2 /* WangWenbeiHW5UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC7C44E5235FC5B9005897D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC7C44CC235FC5B6005897D2 /* WangWenbeiHW5 */;
+			targetProxy = CC7C44E4235FC5B9005897D2 /* PBXContainerItemProxy */;
+		};
+		CC7C44F0235FC5B9005897D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC7C44CC235FC5B6005897D2 /* WangWenbeiHW5 */;
+			targetProxy = CC7C44EF235FC5B9005897D2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CC7C44DB235FC5B8005897D2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC7C44DC235FC5B8005897D2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC7C44F5235FC5B9005897D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CC7C44F6235FC5B9005897D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC7C44F8235FC5B9005897D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WangWenbeiHW5/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WangWenbeiHW5/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.wenbeiwa.WangWenbeiHW5;
+				PRODUCT_NAME = Flashcards;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC7C44F9235FC5B9005897D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WangWenbeiHW5/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WangWenbeiHW5/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.wenbeiwa.WangWenbeiHW5;
+				PRODUCT_NAME = Flashcards;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CC7C44FB235FC5B9005897D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WangWenbeiHW5Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.wenbeiwa.WangWenbeiHW5Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WangWenbeiHW5.app/WangWenbeiHW5";
+			};
+			name = Debug;
+		};
+		CC7C44FC235FC5B9005897D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WangWenbeiHW5Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.wenbeiwa.WangWenbeiHW5Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WangWenbeiHW5.app/WangWenbeiHW5";
+			};
+			name = Release;
+		};
+		CC7C44FE235FC5B9005897D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WangWenbeiHW5UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.wenbeiwa.WangWenbeiHW5UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WangWenbeiHW5;
+			};
+			name = Debug;
+		};
+		CC7C44FF235FC5B9005897D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WangWenbeiHW5UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.wenbeiwa.WangWenbeiHW5UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WangWenbeiHW5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC7C44C8235FC5B6005897D2 /* Build configuration list for PBXProject "WangWenbeiHW5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC7C44F5235FC5B9005897D2 /* Debug */,
+				CC7C44F6235FC5B9005897D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC7C44F7235FC5B9005897D2 /* Build configuration list for PBXNativeTarget "WangWenbeiHW5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC7C44F8235FC5B9005897D2 /* Debug */,
+				CC7C44F9235FC5B9005897D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC7C44FA235FC5B9005897D2 /* Build configuration list for PBXNativeTarget "WangWenbeiHW5Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC7C44FB235FC5B9005897D2 /* Debug */,
+				CC7C44FC235FC5B9005897D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC7C44FD235FC5B9005897D2 /* Build configuration list for PBXNativeTarget "WangWenbeiHW5UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC7C44FE235FC5B9005897D2 /* Debug */,
+				CC7C44FF235FC5B9005897D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC7C44C5235FC5B6005897D2 /* Project object */;
+}

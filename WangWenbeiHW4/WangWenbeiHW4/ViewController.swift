@@ -86,7 +86,7 @@ class ViewController: UIViewController {
         billAmount = 0.0
         taxValue = 0.0
         subtotal = 0.0
-        taxPercentage = 0.0
+        taxPercentage = 7.5
         tipAmount = 0.0
         tipPercentage = 0.0
         tWithTip = 0.0
@@ -105,10 +105,10 @@ class ViewController: UIViewController {
                 
             tipAmount = billAmount * tipPercentage
             tipLabel.text = "$" + String (format: "%.2f", tipAmount)
-            taxValue = billAmount * tipPercentage
+            taxValue = billAmount * (taxPercentage/100)
             taxLabel.text = "$" + String (format: "%.2f", taxValue)
             
-            subtotal = taxValue
+            subtotal = billAmount
             tWithTip = billAmount + tipAmount
             
             if includeTax {
@@ -116,7 +116,7 @@ class ViewController: UIViewController {
                 tWithTip += taxValue
             }
 
-            tPP = billAmount/Double(splitNum)
+            tPP = tWithTip/Double(splitNum)
             subtotalLabel.text = "$" + String (format: "%.2f", subtotal)
             totalWithTipLabel.text = "$" + String (format: "%.2f", tWithTip)
             totalPPLabel.text = "$" + String (format: "%.2f", tPP)
@@ -124,9 +124,8 @@ class ViewController: UIViewController {
     }
         
     @IBAction func sliderChanged(_ sender: UISlider) {
-        let num = sender.value
-        tipPercentage = Double(sender.value/100)
-        tipSliderLabel.text = "\(Int(num))%"
+        tipPercentage = Double(sender.value.rounded()/100)
+        tipSliderLabel.text = "\(Int(sender.value.rounded()))%"
 
         if billAmountLabel.text != ""{
             let amount = billAmountLabel.text ?? ""
