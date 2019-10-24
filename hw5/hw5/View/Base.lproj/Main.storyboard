@@ -34,6 +34,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="D47-hK-yzb" appends="YES" id="rxZ-R1-gEx"/>
+                            <outletCollection property="gestureRecognizers" destination="s8N-gj-kak" appends="YES" id="LOY-KU-cn2"/>
                         </connections>
                     </view>
                     <connections>
@@ -46,6 +47,11 @@
                         <action selector="singleTapped:" destination="BYZ-38-t0r" id="55J-dz-3si"/>
                     </connections>
                 </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="s8N-gj-kak">
+                    <connections>
+                        <action selector="rightSwipe:" destination="BYZ-38-t0r" id="aXW-Sk-cH2"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="138.40000000000001" y="120.98950524737631"/>
         </scene>

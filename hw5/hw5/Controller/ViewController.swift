@@ -44,11 +44,35 @@ class ViewController: UIViewController {
         backAnimation.startAnimation()
         
     }
+    func rightAway() {
+        questionLabel.transform = CGAffineTransform(translationX: view.frame.size.width, y: 0)
+    }
+    func rightBack (position: UIViewAnimatingPosition){
+        if let prevQuestion = model.previousFlashcard() {
+            questionLabel.text = prevQuestion.getQuestion()
+        }
+        else {
+            questionLabel.text = "No previous card"
+        }
+        questionLabel.transform = CGAffineTransform(translationX: -view.frame.size.width, y: 0)
+        let rightBackAnimation = UIViewPropertyAnimator(duration: 1, curve: .linear, animations: {() in
+        self.questionLabel.transform = CGAffineTransform(translationX: 0, y: 0) })
+        rightBackAnimation.startAnimation()
+    }
     @IBAction func singleTapped(_ sender: UITapGestureRecognizer) {
         let firstAnimator = UIViewPropertyAnimator(duration: 1, curve: .linear, animations: fadeUp)
         firstAnimator.addCompletion(fadeBack)
         firstAnimator.startAnimation()
     }
+    
+    @IBAction func rightSwipe(_ sender: UISwipeGestureRecognizer) {
+        if sender.direction == .right {
+            let swipeRight = UIViewPropertyAnimator(duration: 1, curve: .linear, animations: rightAway)
+            swipeRight.addCompletion(rightBack)
+            swipeRight.startAnimation()
+        }
+    }
+    
     
 
 }
