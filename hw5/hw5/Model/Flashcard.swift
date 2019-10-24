@@ -39,12 +39,13 @@ class FlashcardsModel: NSObject, FlashcardsDataModel {
         self.currentIndex = 0
         self.questionDisplayed = false
         // need five flashcards
-        let card1 = Flashcard(question: "Which animal  ", answer: "Bonobo")
-        let card2 = Flashcard(question: "Second Q", answer: "Second A")
-//        let card3 =
-//        let card4 =
+        let card1 = Flashcard(question: "Which chemical element is diamond made of?", answer: "Carbon")
+        let card2 = Flashcard(question: "Which part of the body produces insulin?", answer: "Pancreas")
+        let card3 = Flashcard(question: "Who wrote 'The Scarlet Letter'?", answer: "Nathaniel Hawthorne")
+        let card4 = Flashcard(question: "What is the official language of Brazil?", answer: "Portuguese")
+        let card5 = Flashcard(question: "How many books are there in the Harry Potter series?", answer: "Eight")
         
-        self.flashcards = [card1, card2]
+        self.flashcards = [card1, card2, card3, card4, card5]
     }
     func numberOfFlashcards() -> Int {
         return flashcards.count
@@ -73,10 +74,12 @@ class FlashcardsModel: NSObject, FlashcardsDataModel {
     
     func nextFlashcard() -> Flashcard? {
         let current = currentIndex ?? -1
-        if current > 0 && current < flashcards.count - 1{
+        if current >= 0 && current < flashcards.count - 1{
+            currentIndex = current + 1
             return flashcards[current + 1]
         }
         else if current == flashcards.count - 1 {
+            currentIndex = 0
             return flashcards[0]
         }
         return nil
@@ -85,9 +88,11 @@ class FlashcardsModel: NSObject, FlashcardsDataModel {
     func previousFlashcard() -> Flashcard? {
         let current = currentIndex ?? -1
         if current > 0 && current < flashcards.count {
+            currentIndex = current - 1
             return flashcards[current - 1]
         }
         else if current == 0 {
+            currentIndex = flashcards.count - 1
             return flashcards[flashcards.count - 1]
         }
         return nil
