@@ -43,11 +43,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="D47-hK-yzb">
-                    <connections>
-                        <action selector="singleTapped:" destination="BYZ-38-t0r" id="55J-dz-3si"/>
-                    </connections>
-                </tapGestureRecognizer>
+                <tapGestureRecognizer id="D47-hK-yzb"/>
                 <swipeGestureRecognizer direction="right" id="s8N-gj-kak">
                     <connections>
                         <action selector="handleSwipe:" destination="BYZ-38-t0r" id="68g-8q-wfp"/>
@@ -58,6 +54,7 @@
                         <action selector="handleSwipe:" destination="BYZ-38-t0r" id="roZ-9f-fGW"/>
                     </connections>
                 </swipeGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="EY8-Lh-QXL"/>
             </objects>
             <point key="canvasLocation" x="138.40000000000001" y="120.98950524737631"/>
         </scene>

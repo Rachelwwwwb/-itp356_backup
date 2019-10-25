@@ -10,9 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
     var model = FlashcardsModel.sharedInstance
+    var firstColor = true
+    let color1 = UIColor.black
+    let color2 = UIColor.red
     
     //IBOutlets
     @IBOutlet weak var questionLabel: UILabel!
+    
     @IBAction func handleSwipe(_ sender: UISwipeGestureRecognizer) {
         if sender.direction == .right {
             let swipeRight = UIViewPropertyAnimator(duration: 1, curve: .linear, animations: rightAway)
@@ -29,9 +33,67 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let doubletap = UITapGestureRecognizer(target: self, action: #selector(doubleTapped))
+        doubletap.numberOfTapsRequired = 2
+        view.addGestureRecognizer(doubletap)
+        
+        let singletap = UITapGestureRecognizer(target: self, action: #selector(singleTapped))
+        singletap.numberOfTapsRequired = 1
+        view.addGestureRecognizer(singletap)
+        
+        singletap.require(toFail: doubletap)
+        singletap.delaysTouchesBegan = true
+        doubletap.delaysTouchesBegan = true
         getRandomQuestion()
     }
     
+    @objc func doubleTapped() {
+        let fadeOut = UIViewPropertyAnimator (duration: 1, curve: .linear, animations: fadeOutLabel)
+        fadeOut.addCompletion(changeLabel)
+        fadeOut.startAnimation()
+    }
+    @objc func singleTapped() {
+        let firstAnimator = UIViewPropertyAnimator(duration: 1, curve: .linear, animations: fadeUp)
+        firstAnimator.addCompletion(fadeBack)
+        firstAnimator.startAnimation()
+    }
+    func fadeOutLabel() {
+        questionLabel.alpha = 0
+    }
+    func fadeInLabel() {
+        questionLabel.alpha = 1
+    }
+    func changeLabel(postion:UIViewAnimatingPosition) {
+        if model.questionDisplayed {
+            model.questionDisplayed = false
+            if let current = model.currentFlashcard() {
+                questionLabel.text = current.getAnswer()
+            }
+            else {
+                questionLabel.text = "No answer"
+            }
+        }
+        else {
+            model.questionDisplayed = true
+            if let current = model.currentFlashcard() {
+                questionLabel.text = current.getQuestion()
+            }
+            else {
+                questionLabel.text = "No answer"
+            }
+        }
+        if firstColor {
+            questionLabel.textColor = color2
+            firstColor = false
+        }
+        else {
+            questionLabel.textColor = color1
+            firstColor = true
+        }
+        let appearAnimation = UIViewPropertyAnimator(duration: 1, curve: .linear, animations: {() in
+        self.fadeInLabel() })
+        appearAnimation.startAnimation()
+    }
     func getRandomQuestion() {
         if let randomQuestion = model.randomFlashcard() {
             questionLabel.text = randomQuestion.getQuestion()
@@ -87,12 +149,6 @@ class ViewController: UIViewController {
         self.questionLabel.transform = CGAffineTransform(translationX: 0, y: 0) })
         rightBackAnimation.startAnimation()
     }
-    @IBAction func singleTapped(_ sender: UITapGestureRecognizer) {
-        let firstAnimator = UIViewPropertyAnimator(duration: 1, curve: .linear, animations: fadeUp)
-        firstAnimator.addCompletion(fadeBack)
-        firstAnimator.startAnimation()
-    }
-    
 
 
 }

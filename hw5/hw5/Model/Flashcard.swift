@@ -34,10 +34,11 @@ class FlashcardsModel: NSObject, FlashcardsDataModel {
     
     private var flashcards = [Flashcard]()
     private var currentIndex : Int?
-    var questionDisplayed : Bool
+    public var questionDisplayed : Bool
     override init() {
         self.currentIndex = 0
-        self.questionDisplayed = false
+        //display question first
+        self.questionDisplayed = true
         // need five flashcards
         let card1 = Flashcard(question: "Which chemical element is diamond made of?", answer: "Carbon")
         let card2 = Flashcard(question: "Which part of the body produces insulin?", answer: "Pancreas")
