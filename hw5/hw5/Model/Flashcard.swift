@@ -51,7 +51,6 @@ class FlashcardsModel: NSObject, FlashcardsDataModel {
     func numberOfFlashcards() -> Int {
         return flashcards.count
     }
-    
     func randomFlashcard() -> Flashcard? {
         let num = flashcards.count
         
@@ -67,7 +66,8 @@ class FlashcardsModel: NSObject, FlashcardsDataModel {
     }
     
     func flashcard(at index: Int) -> Flashcard? {
-        if index > 0 && index < flashcards.count{
+        if index >= 0 && index < flashcards.count{
+            currentIndex = index
             return flashcards[index]
         }
         return nil
