@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:WangWenbeiHW5.xcodeproj">
+      location = "self:hw5.xcodeproj">
    </FileRef>
 </Workspace>
