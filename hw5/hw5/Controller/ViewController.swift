@@ -109,6 +109,9 @@ class ViewController: UIViewController {
     {
         // pop back to the position
         if let random = model.randomFlashcard() {
+            questionLabel.textColor = color1
+            model.questionDisplayed = true
+            firstColor = true
             questionLabel.text = random.getQuestion()
         } else {
             questionLabel.text = "No more quotes"
@@ -126,6 +129,9 @@ class ViewController: UIViewController {
     }
     func leftBack (position: UIViewAnimatingPosition){
         if let nextQuestion = model.nextFlashcard() {
+            questionLabel.textColor = color1
+            model.questionDisplayed = true
+            firstColor = true
             questionLabel.text = nextQuestion.getQuestion()
         }
         else {
@@ -139,6 +145,9 @@ class ViewController: UIViewController {
     
     func rightBack (position: UIViewAnimatingPosition){
         if let prevQuestion = model.previousFlashcard() {
+            questionLabel.textColor = color1
+            model.questionDisplayed = true
+            firstColor = true
             questionLabel.text = prevQuestion.getQuestion()
         }
         else {
